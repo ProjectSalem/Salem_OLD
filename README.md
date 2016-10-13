@@ -14,3 +14,4 @@ Features
 + Livestream through webcam
 + Web interface & mobile app
 + Cheaper compared to market products (?)
++ Laser light game for cats
