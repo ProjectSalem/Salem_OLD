@@ -1,0 +1,12 @@
+1-)kendimizi tanitma, projemizin hedef kitlesi, kime ne kolaylik sagliyacak, projenin amaci genel olarak
+--
+2-)Salem nedir, genel olarak teknik detay vermeden.
+--
+3-)Sonra daha teknik aciklamalarla, hangi bilesenlerden olustugunu anlaticaz.
+--
+4-) Isin arkaplan kismininda, login olma, remote serverin gorevi vs. anlaticaz.
+--
+5-) Isin mekanik kismi, motorlar vs nasil calisiyor. (Prototipi burada gosteriririz.) 
+** PROTOTIP'I WEB'DEN CALISTIRMA **
+--
+6-)Future Works
