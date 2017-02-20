@@ -3,18 +3,18 @@ Make sure Node.js installed on your machine and port 3000 not used by any other 
 First cd into folder:
 
 ``
-$ cd ReactV1
+$ cd ReactV1                  
 ``
 
 Install dependencies:
 
 ``
-$ npm install
+$ npm install                 
 ``
 
 Start the app:
 
 ``
-$ npm start
+$ npm start                 
 ``
 Now you can access the app on http://localhost:3000 
