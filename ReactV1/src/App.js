@@ -19,6 +19,7 @@ import Image from 'grommet/components/Image';
 
 //TODO: Navigation Menu'yu sola al, sayfa daha dolu gozukebilir.
 //TODO: Sayfalar arasi gecise animation ekle
+
 const Logo = () =>
     <div>
         <Image src='/logo.png' size='thumb'/>
@@ -55,7 +56,7 @@ const Foot = () =>
     </Footer>;
 
 const Authorized = () =>
-    <Tabs >
+    <Tabs activeIndex={3}>
         <Tab title='Home'>
             {<Home />}
         </Tab>

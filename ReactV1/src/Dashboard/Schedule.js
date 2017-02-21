@@ -18,7 +18,12 @@ import FormFields from 'grommet/components/FormFields';
 import TextInput from 'grommet/components/TextInput';
 import NumberInput from 'grommet/components/NumberInput';
 import DateTime from 'grommet/components/DateTime';
+import CloseIcon from 'grommet/components/icons/base/Close';
 
+/*
+ TODO: 1) Layer acilisina animation ekle, butona tiklayinca cok sert acilip kapaniyor.
+ TODO: 2) Formda inputlari yeni value girilmesi icin onChange methodu ekle.
+ */
 
 const Meal = () =>
     <Tiles fill={true}
@@ -42,6 +47,7 @@ const Meal = () =>
                 </Paragraph>
             </Box>
         </Tile>
+
         <Tile separator='top'
               align='start'
               basis='1/3'>
@@ -59,6 +65,7 @@ const Meal = () =>
                 </Paragraph>
             </Box>
         </Tile>
+
         <Tile separator='top'
               align='start'
               basis='1/3'>
@@ -76,6 +83,7 @@ const Meal = () =>
                 </Paragraph>
             </Box>
         </Tile>
+        
         <Tile separator='top'
               align='start'
               basis='1/3'>
@@ -95,10 +103,6 @@ const Meal = () =>
         </Tile>
     </Tiles>;
 
-/*
-TODO: 1) Layer acilisina animation ekle, butona tiklayinca cok sert acilip kapaniyor.
-TODO: 2) Formda inputlari yeni value girilmesi icin onChange methodu ekle.
-*/
 
 class newMealForm extends React.Component {
     render() {
@@ -179,10 +183,11 @@ class NewMeal extends React.Component {
                             label='Add Meal'
                             href="#"
                             primary={true}
-                            secondary={false}
-                            accent={false}
+                            fill={true}
                             plain={true}
                             onClick={this._onClick}/>
+                    {<DeleteButton />}
+
                 </Box>
             </div>
         );
@@ -190,6 +195,14 @@ class NewMeal extends React.Component {
 
 }
 
+const DeleteButton = () =>
+    <Button icon={<CloseIcon />}
+            label='Delete Meal'
+            plain={true}
+
+            fill={true}
+            href='#'
+            secondary={true}/>;
 
 const Days = () =>
     <Accordion openMulti={true}>
@@ -197,6 +210,7 @@ const Days = () =>
         <AccordionPanel heading='Monday'>
             <Meal />
             {React.createElement(NewMeal)}
+
         </AccordionPanel>
         <AccordionPanel heading='Tuesday'>
             {React.createElement(NewMeal)}
