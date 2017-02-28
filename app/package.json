@@ -1,0 +1,12 @@
+{
+  "name": "salem",
+  "version": "0.0.0",
+  "description": "Web app to demonstrate IoT with Firebase",
+  "main": "index.js",
+  "license": "",
+  "dependencies": {
+    "express": "^4.14.1",
+    "firebase": "^1.1.1",
+    "socket.io": "^1.7.3"
+  }
+}
